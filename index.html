@@ -337,7 +337,7 @@
 <div class="gallery-card reveal">
 <div><p class="eyebrow">For current clients</p><h2>Access your private gallery.</h2><p>Use the private link and password from your delivery email to view, favorite, and download your images.</p></div>
 <div class="gallery-actions">
-<a class="button" href="#" id="gallery-link" rel="noopener" target="_blank">Open Client Gallery</a>
+<a class="button" href="https://quietbloomstudio.pixieset.com/" id="gallery-link" rel="noopener" target="_blank">Open Client Gallery</a>
 <a class="text-link" href="mailto:quietbloomstudio.okc@gmail.com?subject=Gallery%20access%20help">I need help accessing my gallery</a>
 <small>Gallery passwords are never entered on this website.</small>
 </div>
@@ -464,7 +464,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   if('IntersectionObserver' in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});reveals.forEach(el=>io.observe(el));}else{reveals.forEach(el=>el.classList.add('visible'));}
 
   const year=document.querySelector('#year');if(year)year.textContent=new Date().getFullYear();
-  const gallery=document.querySelector('#gallery-link');if(gallery){gallery.href='mailto:quietbloomstudio.okc@gmail.com?subject=Client%20gallery%20access';gallery.removeAttribute('target');}
+  const gallery=document.querySelector('#gallery-link');if(gallery){gallery.href='https://quietbloomstudio.pixieset.com/';gallery.target='_blank';gallery.rel='noopener';}
   const instagram=document.querySelector('#instagram-link');if(instagram){instagram.href='https://www.instagram.com/quiet_bloom_studi0/';}
 
   const form=document.querySelector('#booking-form');
